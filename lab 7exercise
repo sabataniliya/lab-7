@@ -1,0 +1,45 @@
+public class Vehicle {
+        public int Speed;
+        public void run(){
+            System.out.println("this is vehicle :" +this.Speed);
+        }
+    }
+
+public class Bike extends Vehicle {
+
+    public int speed;
+
+        public void run() {System.out.println ("the bike is running at:" +this.Speed);}
+    }
+    
+    public class Car extends Vehicle {
+
+    public int speed;
+
+        public void run(){System.out.println ("the bike is running at:" +this.Speed);
+    }
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+        Scanner in= new Scanner(System.in);
+        System.out.println("the speed is:");
+        int a =in.nextInt();
+        int b =in.nextInt();
+        int c =in.nextInt();
+
+        Vehicle obj1 = new Vehicle();
+        obj1.Speed = a;
+        obj1.run();
+
+        Bike obj2 = new Bike();
+        obj2.Speed = b;
+        obj2.run();
+
+        Car obj3 = new Car();
+        obj3.Speed = b;
+        obj3.run();
+
+    }
+}
