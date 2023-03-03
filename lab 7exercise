@@ -1,10 +1,12 @@
+//parent class or super class
 public class Vehicle {
         public int Speed;
         public void run(){
             System.out.println("this is vehicle :" +this.Speed);
         }
     }
-
+    
+//separating subclass bike
 public class Bike extends Vehicle {
 
     public int speed;
@@ -12,13 +14,14 @@ public class Bike extends Vehicle {
         public void run() {System.out.println ("the bike is running at:" +this.Speed);}
     }
     
+    //separating subclass car
     public class Car extends Vehicle {
 
     public int speed;
 
         public void run(){System.out.println ("the bike is running at:" +this.Speed);
     }
-
+//separating main class
 import java.util.Scanner;
 
 public class Main {
